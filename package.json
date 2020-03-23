@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-server-for-test-apps",
+  "version": "1.0.0",
+  "description": "Simple server for develop and testing web apps",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && nodemon dist/server.js",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ielkanyuk/nodejs-server-for-test-apps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ielkanyuk/nodejs-server-for-test-apps/issues"
+  },
+  "homepage": "https://github.com/ielkanyuk/nodejs-server-for-test-apps#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "nodemon": "^2.0.2"
+  }
+}
